@@ -2,7 +2,9 @@ require 'fileutils'
 
 tree = {}
 
-File.read('input').each_line do |line|
+puts ARGV.first || 'input'
+
+File.read('day07/input').each_line do |line|
   bag = line[/\A\w+\s\w+/]
   tree[bag] = {}
 
